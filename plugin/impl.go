@@ -33,6 +33,7 @@ type Settings struct {
 	Note                 string
 	Overwrite            bool
 	GenerateReleaseNotes bool
+	DiscussionCategory   string
 
 	baseURL   *url.URL
 	uploadURL *url.URL
@@ -137,6 +138,7 @@ func (p *Plugin) Execute() error {
 		Note:                 p.settings.Note,
 		Overwrite:            p.settings.Overwrite,
 		GenerateReleaseNotes: p.settings.GenerateReleaseNotes,
+		DiscussionCategory:   p.settings.DiscussionCategory,
 	}
 
 	release, err := rc.buildRelease()

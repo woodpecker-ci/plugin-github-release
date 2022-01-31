@@ -6,8 +6,9 @@
 package main
 
 import (
-	"github.com/woodpecker-ci/plugin-github-release/plugin"
 	"github.com/urfave/cli/v2"
+
+	"github.com/woodpecker-ci/plugin-github-release/plugin"
 )
 
 // settingsFlags has the cli.Flags for the plugin.Settings.

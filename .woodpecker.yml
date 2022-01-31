@@ -24,7 +24,7 @@ pipeline:
       dockerfile: Dockerfile.multiarch
       dry_run: true
       platforms: linux/arm/v7,linux/arm64/v8,linux/amd64,linux/ppc64le
-      tags: latest
+      tags: test
     when:
       event: pull_request
 
@@ -46,7 +46,7 @@ pipeline:
       repo: woodpeckerci/plugin-github-release
       dockerfile: Dockerfile.multiarch
       platforms: linux/arm/v7,linux/arm64/v8,linux/amd64,linux/ppc64le
-      tags: [latest, "${CI_TAG}"]
+      tags: [latest, "${CI_TAG##v}"]
     secrets: [docker_username, docker_password]
     when:
       event: tag

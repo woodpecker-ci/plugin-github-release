@@ -1,1 +1,0 @@
-{"buildTargets":["all","build","clean","format","formatcheck","test","vendor","version","vet"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

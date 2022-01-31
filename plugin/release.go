@@ -11,23 +11,24 @@ import (
 	"os"
 	"path"
 
-	"github.com/google/go-github/v35/github"
+	"github.com/google/go-github/v42/github"
 )
 
 // Release holds ties the drone env data and github client together.
 type releaseClient struct {
 	*github.Client
 	context.Context
-	Owner              string
-	Repo               string
-	Tag                string
-	Draft              bool
-	Prerelease         bool
-	DiscussionCategory string
-	FileExists         string
-	Title              string
-	Note               string
-	Overwrite          bool
+	Owner                string
+	Repo                 string
+	Tag                  string
+	Draft                bool
+	Prerelease           bool
+	FileExists           string
+	Title                string
+	Note                 string
+	Overwrite            bool
+	GenerateReleaseNotes bool
+	DiscussionCategory   string
 }
 
 func (rc *releaseClient) buildRelease() (*github.RepositoryRelease, error) {
@@ -120,9 +121,10 @@ func (rc *releaseClient) newRelease() (*github.RepositoryRelease, error) {
 		TagName:                github.String(rc.Tag),
 		Draft:                  &rc.Draft,
 		Prerelease:             &rc.Prerelease,
-		DiscussionCategoryName: &rc.DiscussionCategory,
 		Name:                   &rc.Title,
 		Body:                   &rc.Note,
+		GenerateReleaseNotes:   &rc.GenerateReleaseNotes,
+		DiscussionCategoryName: &rc.DiscussionCategory,
 	}
 
 	if *rr.Prerelease {
@@ -141,6 +143,12 @@ func (rc *releaseClient) newRelease() (*github.RepositoryRelease, error) {
 		fmt.Printf("Release discussion in category %s\n", *rr.DiscussionCategoryName)
 	} else {
 		fmt.Println("Not creating a discussion")
+	}
+
+	if *rr.GenerateReleaseNotes {
+		fmt.Printf("Release %s automatically will generate release notes\n", rc.Tag)
+	} else {
+		fmt.Printf("Release %s automatically will not generate release notes\n", rc.Tag)
 	}
 
 	release, _, err := rc.Client.Repositories.CreateRelease(rc.Context, rc.Owner, rc.Repo, rr)

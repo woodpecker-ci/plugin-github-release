@@ -1,0 +1,440 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Mon Jan 31 18:46:14 2022
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+NO_AT_BRIDGE = 1
+# environment
+CSF_EXCEPTION_PROMPT = 1
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-95fe1424-5498-472b-a493-8800546366b7.sock
+# makefile (from 'Makefile', line 2)
+GO_PACKAGES = $(shell go list ./... | grep -v /vendor/)
+# environment
+CSF_XmlOcafResource = /usr/share/opencascade/resources/XmlOcafResource
+# environment
+VSCODE_CWD = /home/maddl/git/woodpecker/plugin-github-release
+# environment
+WINDOWID = 69953874
+# environment
+WINDOWPATH = 1
+# environment
+MMGT_CLEAR = 1
+# environment
+CSF_XCAFDefaults = /usr/share/opencascade/resources/StdResource
+# environment
+CSF_PluginDefaults = /usr/share/opencascade/resources/StdResource
+# environment
+CASROOT = /usr
+# default
+MAKE_COMMAND := make
+# environment
+GTK3_MODULES = xapp-gtk3-module
+# environment
+GOPATH = /home/maddl/go
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/maddl/git/woodpecker/plugin-github-release
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+MAIL = /var/spool/mail/maddl
+# makefile (from 'Makefile', line 16)
+BUILD_VERSION := next-d202e600
+# environment
+XDG_DATA_DIRS = /home/maddl/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/maddl/.config/VSCodium/CachedData/899d46d82c4c95423fb7e10e68eba52050e30ba3
+# environment
+CSF_ShadersDirectory = /usr/share/opencascade/resources/Shaders
+# environment
+LANG = C
+# environment
+XAUTHORITY = /home/maddl/.Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# environment
+ANDROID_NDK_HOME = /opt/android-ndk
+# makefile
+CURDIR := /home/maddl/git/woodpecker/plugin-github-release
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from 'Makefile', line 7)
+VERSION = next
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+CSF_MDTVTexturesDirectory = /usr/share/opencascade/resources/Textures
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCodium","submitURL":"","uploadToServer":false}
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+LC_COLLATE = C
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 20408
+# environment
+XDG_SESSION_TYPE = tty
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+CSF_XSMessage = /usr/share/opencascade/resources/XSMessage
+# environment
+DRAWDEFAULT = /usr/share/opencascade/resources/DrawResources/DrawDefault
+# environment
+SESSION_MANAGER = local/PC-Maddl-HOME:@/tmp/.ICE-unix/31149,unix/PC-Maddl-HOME:/tmp/.ICE-unix/31149
+# automatic
+*F = $(notdir $*)
+# environment
+QT_QPA_PLATFORMTHEME = qt5ct
+# environment
+CHROME_DESKTOP = codium-url-handler.desktop
+# environment
+CSF_SHMessage = /usr/share/opencascade/resources/SHMessage
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:abstract=/tmp/dbus-Su7Z5XxYME,guid=2a52c04af05aad1dee58d65e61dce59c
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+QT_SCALE_FACTOR = 1
+# environment
+VSCODE_NLS_CONFIG = {"locale":"de","availableLanguages":{"*":"de"},"_languagePackId":"1467f85883ce00c0d77fd1a5b57dda2a.de","_translationsConfigFile":"/home/maddl/.config/VSCodium/clp/1467f85883ce00c0d77fd1a5b57dda2a.de/tcf.json","_cacheRoot":"/home/maddl/.config/VSCodium/clp/1467f85883ce00c0d77fd1a5b57dda2a.de","_resolvedLanguagePackCoreLocation":"/home/maddl/.config/VSCodium/clp/1467f85883ce00c0d77fd1a5b57dda2a.de/899d46d82c4c95423fb7e10e68eba52050e30ba3","_corruptedFile":"/home/maddl/.config/VSCodium/clp/1467f85883ce00c0d77fd1a5b57dda2a.de/corrupted.info","_languagePackSupport":true}
+# environment
+BREAKPAD_DUMP_LOCATION = /home/maddl/.config/VSCodium/exthost Crash Reports
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+ANDROID_HOME = /opt/android-sdk
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+DOTNET_BUNDLE_EXTRACT_BASE_DIR = /home/maddl/.cache/dotnet_bundle_extract
+# environment
+SHLVL = 4
+# environment
+ANDROID_NDK = /opt/android-ndk
+# environment
+CSF_TObjDefaults = /usr/share/opencascade/resources/StdResource
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/maddl/bin:/home/maddl/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/android-sdk/emulator:/opt/android-ndk:/opt/android-sdk/tools:/opt/android-sdk/tools/bin:/opt/brlcad/bin:/home/maddl/.dotnet/tools:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/maddl/go/bin:/home/maddl/bin/markus:~/.cargo/bin:/home/maddl/go/bin:/home/maddl/bin/markus:~/.cargo/bin
+# default
+MAKEFILES := 
+# environment
+MOTD_SHOWN = pam
+# environment
+CSF_OCCTResourcePath = /usr/share/opencascade/resources
+# automatic
+^F = $(notdir $^)
+# makefile (from 'Makefile', line 15)
+CI_COMMIT_SHA = $(shell git rev-parse HEAD)
+# environment
+MATE_DESKTOP_SESSION_ID = this-is-deprecated
+# environment
+GRADLE_HOME = /usr/share/java/gradle
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+CSF_StandardLiteDefaults = /usr/share/opencascade/resources/StdResource
+# environment
+CSF_STEPDefaults = /usr/share/opencascade/resources/XSTEPResource
+# automatic
+?F = $(notdir $?)
+# environment
+XDG_SEAT = seat0
+# environment
+XDG_CURRENT_DESKTOP = MATE
+# environment
+CSF_MIGRATION_TYPES = /usr/share/opencascade/resources/StdResource/MigrationSheet.txt
+# environment
+MKLROOT = /opt/intel/mkl
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.pdf=00;32:*.ps=00;32:*.txt=00;32:*.patch=00;32:*.diff=00;32:*.log=00;32:*.tex=00;32:*.doc=00;32:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:
+# automatic
++F = $(notdir $+)
+# makefile (from 'Makefile', line 1)
+GOFILES_NOVENDOR = $(shell find . -type f -name '*.go' -not -path "./vendor/*" -not -path "./.git/*")
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = MATE
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = maddl
+# environment
+CSF_LANGUAGE = us
+# environment
+XDG_VTNR = 1
+# makefile
+.DEFAULT_GOAL := all
+# environment
+YAOURT_COLORS = nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1;41;5:votes=1;44:dsc=0:other=1;35
+# environment
+CSF_TObjMessage = /usr/share/opencascade/resources/TObj
+# environment
+EDITOR = /usr/bin/nano
+# environment
+DISPLAY = :0.0
+# environment
+USER = maddl
+# default
+MAKE_VERSION := 4.3
+# makefile (from 'Makefile', line 4)
+TARGETOS = linux
+# environment
+QT_FONT_DPI = 94
+# 'override' directive
+.SHELLSTATUS := 0
+# makefile (from 'Makefile', line 19)
+LDFLAGS := -s -w -extldflags "-static" -X main.version=next-d202e600
+# environment
+_ = /usr/bin/make
+# environment
+MOZ_PLUGIN_PATH = /usr/lib/mozilla/plugins
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+COLORTERM = truecolor
+# environment
+GTK_OVERLAY_SCROLLING = 0
+# environment
+CSF_DrawPluginDefaults = /usr/share/opencascade/resources/DrawResources
+# environment
+CSF_IGESDefaults = /usr/share/opencascade/resources/XSTEPResource
+# environment
+GOMODCACHE = /home/maddl/go/pkg/mod
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+HOME = /home/maddl
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+DRAWHOME = /usr/share/opencascade/resources/DrawResources
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-fd77f6bd-1.63.2-main.sock
+# environment
+TERM = xterm-256color
+# environment
+HG = /usr/bin/hg
+# environment
+XDG_SESSION_ID = 1
+# environment
+GOPROXY = https://proxy.golang.org,direct
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# makefile (from 'Makefile', line 5)
+TARGETARCH = amd64
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+VTE_VERSION = 6602
+# environment
+CSF_StandardDefaults = /usr/share/opencascade/resources/StdResource
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# environment
+DOTNET_ROOT = /usr/share/dotnet
+# variable set hash-table stats:
+ 
+# Load=138/1024=13%, Rehash=0, Collisions=14/196=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 57, inode 50164123): 19 files, no impossibilities.
+
+# 19 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+formatcheck:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 28):
+	@([ -z "$(shell gofmt -d $(GOFILES_NOVENDOR) | head)" ]) || (echo "Source is unformatted"; exit 1)
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-31 18:23:17.370005152
+#  File has been updated.
+#  Successfully updated.
+
+version:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 51):
+	@echo ${BUILD_VERSION}
+
+vendor:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 24):
+	go mod tidy
+	go mod vendor
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 35):
+	go clean -i ./...
+	rm -rf release/
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: build
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+
+vet:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 40):
+	@echo "Running go vet..."
+	@go vet $(GO_PACKAGES)
+
+build:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := build
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=5/14=36%
+#  recipe to execute (from 'Makefile', line 47):
+	CGO_ENABLED=0 GOOS=${TARGETOS} GOARCH=${TARGETARCH} go build -ldflags '${LDFLAGS}' -o release/plugin-github-release
+
+test:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 44):
+	go test -race -cover ./...
+
+format:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 31):
+	@gofmt -w ${GOFILES_NOVENDOR}
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: clean vet version
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=13/1024=1%, Rehash=0, Collisions=0/35=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 32 / storage = 293 B / avg = 9 B
+# current buf: size = 8162 B / used = 293 B / count = 32 / avg = 9 B
+
+# strcache performance: lookups = 57 / hit rate = 43%
+# hash-table stats:
+# Load=32/8192=0%, Rehash=0, Collisions=0/57=0%
+# Finished Make data base on Mon Jan 31 18:46:14 2022
+
+ 

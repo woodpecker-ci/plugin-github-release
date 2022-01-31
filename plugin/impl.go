@@ -12,27 +12,28 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/google/go-github/v35/github"
+	"github.com/google/go-github/v42/github"
 	"github.com/urfave/cli/v2"
 	"golang.org/x/oauth2"
 )
 
 // Settings for the plugin.
 type Settings struct {
-	APIKey             string
-	Files              cli.StringSlice
-	FileExists         string
-	Checksum           cli.StringSlice
-	ChecksumFile       string
-	ChecksumFlatten    bool
-	Draft              bool
-	Prerelease         bool
-	DiscussionCategory string
-	BaseURL            string
-	UploadURL          string
-	Title              string
-	Note               string
-	Overwrite          bool
+	APIKey               string
+	Files                cli.StringSlice
+	FileExists           string
+	Checksum             cli.StringSlice
+	ChecksumFile         string
+	ChecksumFlatten      bool
+	Draft                bool
+	Prerelease           bool
+	BaseURL              string
+	UploadURL            string
+	Title                string
+	Note                 string
+	Overwrite            bool
+	GenerateReleaseNotes bool
+	DiscussionCategory   string
 
 	baseURL   *url.URL
 	uploadURL *url.URL
@@ -125,18 +126,19 @@ func (p *Plugin) Execute() error {
 	client.UploadURL = p.settings.uploadURL
 
 	rc := releaseClient{
-		Client:             client,
-		Context:            p.network.Context,
-		Owner:              p.pipeline.Repo.Owner,
-		Repo:               p.pipeline.Repo.Name,
-		Tag:                strings.TrimPrefix(p.pipeline.Commit.Ref, "refs/tags/"),
-		Draft:              p.settings.Draft,
-		Prerelease:         p.settings.Prerelease,
-		DiscussionCategory: p.settings.DiscussionCategory,
-		FileExists:         p.settings.FileExists,
-		Title:              p.settings.Title,
-		Note:               p.settings.Note,
-		Overwrite:          p.settings.Overwrite,
+		Client:               client,
+		Context:              p.network.Context,
+		Owner:                p.pipeline.Repo.Owner,
+		Repo:                 p.pipeline.Repo.Name,
+		Tag:                  strings.TrimPrefix(p.pipeline.Commit.Ref, "refs/tags/"),
+		Draft:                p.settings.Draft,
+		Prerelease:           p.settings.Prerelease,
+		FileExists:           p.settings.FileExists,
+		Title:                p.settings.Title,
+		Note:                 p.settings.Note,
+		Overwrite:            p.settings.Overwrite,
+		GenerateReleaseNotes: p.settings.GenerateReleaseNotes,
+		DiscussionCategory:   p.settings.DiscussionCategory,
 	}
 
 	release, err := rc.buildRelease()

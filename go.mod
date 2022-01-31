@@ -1,4 +1,4 @@
-module github.com/drone-plugins/drone-github-release
+module github.com/woodpecker-ci/plugin-github-release
 
 go 1.15
 

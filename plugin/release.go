@@ -33,7 +33,6 @@ type releaseClient struct {
 func (rc *releaseClient) buildRelease() (*github.RepositoryRelease, error) {
 	// first attempt to get a release by that tag
 	release, err := rc.getRelease()
-
 	if err != nil {
 		return nil, fmt.Errorf("failed to retrieve a release: %w", err)
 	}
@@ -54,7 +53,6 @@ func (rc *releaseClient) buildRelease() (*github.RepositoryRelease, error) {
 }
 
 func (rc *releaseClient) getRelease() (*github.RepositoryRelease, error) {
-
 	listOpts := &github.ListOptions{PerPage: 10}
 
 	for {
@@ -66,7 +64,6 @@ func (rc *releaseClient) getRelease() (*github.RepositoryRelease, error) {
 
 		// browse through current release page
 		for _, release := range releases {
-
 			// return release associated to the given tag (can only be one)
 			if release.GetTagName() == rc.Tag {
 				fmt.Printf("Found release %d for tag %s\n", release.GetID(), release.GetTagName())
@@ -104,7 +101,6 @@ func (rc *releaseClient) editRelease(targetRelease github.RepositoryRelease) (*g
 	}
 
 	modifiedRelease, _, err := rc.Client.Repositories.EditRelease(rc.Context, rc.Owner, rc.Repo, targetRelease.GetID(), sourceRelease)
-
 	if err != nil {
 		return nil, fmt.Errorf("failed to update release: %w", err)
 	}
@@ -142,7 +138,6 @@ func (rc *releaseClient) newRelease() (*github.RepositoryRelease, error) {
 	}
 
 	release, _, err := rc.Client.Repositories.CreateRelease(rc.Context, rc.Owner, rc.Repo, rr)
-
 	if err != nil {
 		return nil, fmt.Errorf("failed to create release: %w", err)
 	}
@@ -153,7 +148,6 @@ func (rc *releaseClient) newRelease() (*github.RepositoryRelease, error) {
 
 func (rc *releaseClient) uploadFiles(id int64, files []string) error {
 	assets, _, err := rc.Client.Repositories.ListReleaseAssets(rc.Context, rc.Owner, rc.Repo, id, &github.ListOptions{})
-
 	if err != nil {
 		return fmt.Errorf("failed to fetch existing assets: %w", err)
 	}
@@ -183,7 +177,6 @@ files:
 
 	for _, file := range uploadFiles {
 		handle, err := os.Open(file)
-
 		if err != nil {
 			return fmt.Errorf("failed to read %s artifact: %w", file, err)
 		}

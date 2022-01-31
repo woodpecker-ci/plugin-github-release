@@ -21,13 +21,11 @@ import (
 	"strings"
 )
 
-var (
-	fileExistsValues = map[string]bool{
-		"overwrite": true,
-		"fail":      true,
-		"skip":      true,
-	}
-)
+var fileExistsValues = map[string]bool{
+	"overwrite": true,
+	"fail":      true,
+	"skip":      true,
+}
 
 func readStringOrFile(input string) (string, error) {
 	if len(input) > 255 {
@@ -49,7 +47,6 @@ func readStringOrFile(input string) (string, error) {
 
 func checksum(r io.Reader, method string) (string, error) {
 	b, err := ioutil.ReadAll(r)
-
 	if err != nil {
 		return "", err
 	}
@@ -78,13 +75,11 @@ func writeChecksums(files, methods []string, format string, flatten bool) ([]str
 	for _, method := range methods {
 		for _, file := range files {
 			handle, err := os.Open(file)
-
 			if err != nil {
 				return nil, fmt.Errorf("failed to read %s artifact: %w", file, err)
 			}
 
 			hash, err := checksum(handle, method)
-
 			if err != nil {
 				return nil, err
 			}
@@ -96,7 +91,6 @@ func writeChecksums(files, methods []string, format string, flatten bool) ([]str
 	for method, results := range checksums {
 		filename := strings.Replace(format, "CHECKSUM", method, -1)
 		f, err := os.Create(filename)
-
 		if err != nil {
 			return nil, err
 		}

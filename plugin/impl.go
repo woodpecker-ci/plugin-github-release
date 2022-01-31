@@ -86,7 +86,6 @@ func (p *Plugin) Validate() error {
 	files := p.settings.Files.Value()
 	for _, glob := range files {
 		globed, err := filepath.Glob(glob)
-
 		if err != nil {
 			return fmt.Errorf("failed to glob %s: %w", glob, err)
 		}
@@ -141,7 +140,6 @@ func (p *Plugin) Execute() error {
 	}
 
 	release, err := rc.buildRelease()
-
 	if err != nil {
 		return fmt.Errorf("failed to create the release: %w", err)
 	}

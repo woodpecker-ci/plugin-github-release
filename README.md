@@ -4,6 +4,7 @@
 [![Gitter chat](https://badges.gitter.im/drone/drone.png)](https://gitter.im/drone/drone)
 [![Join the discussion at https://discourse.drone.io](https://img.shields.io/badge/discourse-forum-orange.svg)](https://discourse.drone.io)
 [![Drone questions at https://stackoverflow.com](https://img.shields.io/badge/drone-stackoverflow-orange.svg)](https://stackoverflow.com/questions/tagged/drone.io)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fwoodpecker-ci%2Fplugin-github-release.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fwoodpecker-ci%2Fplugin-github-release?ref=badge_shield)
 [![](https://images.microbadger.com/badges/image/plugins/github-release.svg)](https://microbadger.com/images/plugins/github-release "Get your own image badge on microbadger.com")
 [![Go Doc](https://godoc.org/github.com/woodpecker-ci/plugin-github-release?status.svg)](http://godoc.org/github.com/woodpecker-ci/plugin-github-release)
 [![Go Report](https://goreportcard.com/badge/github.com/woodpecker-ci/plugin-github-release)](https://goreportcard.com/report/github.com/woodpecker-ci/plugin-github-release)
@@ -49,3 +50,7 @@ docker run --rm \
   plugins/github-release
 ```
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fwoodpecker-ci%2Fplugin-github-release.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fwoodpecker-ci%2Fplugin-github-release?ref=badge_large)

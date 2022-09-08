@@ -1,19 +1,22 @@
+variables:
+  - &golang 'golang:1.18'
+
 pipeline:
   lint:
     group: test
-    image: golang:1.17
+    image: *golang
     commands:
       - make vet
       - make formatcheck
 
   test:
     group: test
-    image: golang:1.17
+    image: *golang
     commands:
       - make test
 
   version:
-    image: golang:1.17
+    image: *golang
     commands:
       - make version
 

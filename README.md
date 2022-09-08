@@ -49,8 +49,3 @@ docker run --rm \
   -w $(pwd) \
   plugins/github-release
 ```
-
-
-
-## License
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fwoodpecker-ci%2Fplugin-github-release.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fwoodpecker-ci%2Fplugin-github-release?ref=badge_large)

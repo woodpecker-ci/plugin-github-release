@@ -1,15 +1,6 @@
-# drone-github-release
+# woodpecker-github-release
 
-[![Build Status](http://cloud.drone.io/api/badges/woodpecker-ci/plugin-github-release/status.svg)](http://cloud.drone.io/woodpecker-ci/plugin-github-release)
-[![Gitter chat](https://badges.gitter.im/drone/drone.png)](https://gitter.im/drone/drone)
-[![Join the discussion at https://discourse.drone.io](https://img.shields.io/badge/discourse-forum-orange.svg)](https://discourse.drone.io)
-[![Drone questions at https://stackoverflow.com](https://img.shields.io/badge/drone-stackoverflow-orange.svg)](https://stackoverflow.com/questions/tagged/drone.io)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fwoodpecker-ci%2Fplugin-github-release.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fwoodpecker-ci%2Fplugin-github-release?ref=badge_shield)
-[![](https://images.microbadger.com/badges/image/plugins/github-release.svg)](https://microbadger.com/images/plugins/github-release "Get your own image badge on microbadger.com")
-[![Go Doc](https://godoc.org/github.com/woodpecker-ci/plugin-github-release?status.svg)](http://godoc.org/github.com/woodpecker-ci/plugin-github-release)
-[![Go Report](https://goreportcard.com/badge/github.com/woodpecker-ci/plugin-github-release)](https://goreportcard.com/report/github.com/woodpecker-ci/plugin-github-release)
-
-Drone plugin to publish files and artifacts to GitHub Release. For the usage information and a listing of the available options please take a look at [the docs](http://plugins.drone.io/woodpecker-ci/plugin-github-release/).
+Woodpecker plugin to publish files and artifacts to GitHub Release.
 
 ## Build
 
@@ -21,7 +12,7 @@ export GOARCH=amd64
 export CGO_ENABLED=0
 export GO111MODULE=on
 
-go build -v -a -tags netgo -o release/linux/amd64/drone-github-release
+go build -v -a -tags netgo -o release/linux/amd64/plugin-github-release
 ```
 
 ## Docker
@@ -32,7 +23,7 @@ Build the Docker image with the following command:
 docker build \
   --label org.label-schema.build-date=$(date -u +"%Y-%m-%dT%H:%M:%SZ") \
   --label org.label-schema.vcs-ref=$(git rev-parse --short HEAD) \
-  --file docker/Dockerfile.linux.amd64 --tag plugins/github-release .
+  --file docker/Dockerfile.multiarch --tag plugins/github-release .
 ```
 
 ## Usage

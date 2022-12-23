@@ -44,7 +44,7 @@ type Settings struct {
 func (p *Plugin) Validate() error {
 	var err error
 
-	if p.pipeline.Build.Event != "tag" {
+	if p.pipeline.Build.Event != "tag" && p.pipeline.Build.Event != "deployment" {
 		return fmt.Errorf("github release plugin is only available for tags")
 	}
 

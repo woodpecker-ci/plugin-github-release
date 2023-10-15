@@ -6,6 +6,10 @@
 
 @pat-s, @renovate[bot], @dependabot[bot], @s00500, @fossabot, @6543
 
+### ✨ Features
+
+- Allow creating/updating the release discussion category [[#1](https://github.com/woodpecker-ci/plugin-github-release/pull/1)]
+
 ### 📈 Enhancement
 
 - Allow event deployment [[#8](https://github.com/woodpecker-ci/plugin-github-release/pull/8)]
@@ -25,4 +29,3 @@
 - chore(deps): update golang docker tag to v1.21 [[#11](https://github.com/woodpecker-ci/plugin-github-release/pull/11)]
 - Configure Renovate [[#9](https://github.com/woodpecker-ci/plugin-github-release/pull/9)]
 - Add license scan report and status [[#6](https://github.com/woodpecker-ci/plugin-github-release/pull/6)]
-- Allow creating/updating the release discussion category [[#1](https://github.com/woodpecker-ci/plugin-github-release/pull/1)]

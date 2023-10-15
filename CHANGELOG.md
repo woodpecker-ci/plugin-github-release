@@ -8,11 +8,8 @@
 
 ### ✨ Features
 
-- Allow creating/updating the release discussion category [[#1](https://github.com/woodpecker-ci/plugin-github-release/pull/1)]
-
-### 📈 Enhancement
-
 - Allow event deployment [[#8](https://github.com/woodpecker-ci/plugin-github-release/pull/8)]
+- Allow creating/updating the release discussion category [[#1](https://github.com/woodpecker-ci/plugin-github-release/pull/1)]
 
 ### Misc
 

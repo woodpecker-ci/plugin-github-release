@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.1](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/1.1.1) - 2023-10-25
+
+### ❤️ Thanks to all contributors! ❤️
+
+@renovate[bot]
+
+### Misc
+
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v2.2.0 [[#25](https://github.com/woodpecker-ci/plugin-github-release/pull/25)]
+
 ## [1.1.0](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/1.1.0) - 2023-10-15
 
 ### ❤️ Thanks to all contributors! ❤️

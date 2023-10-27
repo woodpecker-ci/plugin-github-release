@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.1.1](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/1.1.1) - 2023-10-25
+## [1.1.1](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/1.1.1) - 2023-10-27
 
 ### ❤️ Thanks to all contributors! ❤️
 

@@ -1,5 +1,5 @@
 variables:
-  - &golang 'golang:1.21'
+  - &golang 'golang:1.21@sha256:24a09375a6216764a3eda6a25490a88ac178b5fcb9511d59d0da5ebf9e496474'
 
 steps:
   lint:
@@ -21,7 +21,7 @@ steps:
       - make version
 
   build-dryrun:
-    image: woodpeckerci/plugin-docker-buildx:2.2.0
+    image: woodpeckerci/plugin-docker-buildx:2.2.0@sha256:6e95efac78f04d45c4177c07489bc01cb6dc5ae6b39f723edd42d5d695b6f2be
     settings:
       repo: woodpeckerci/plugin-github-release
       dockerfile: Dockerfile.multiarch
@@ -32,7 +32,7 @@ steps:
       event: pull_request
 
   build-next:
-    image: woodpeckerci/plugin-docker-buildx:2.2.0
+    image: woodpeckerci/plugin-docker-buildx:2.2.0@sha256:6e95efac78f04d45c4177c07489bc01cb6dc5ae6b39f723edd42d5d695b6f2be
     settings:
       repo: woodpeckerci/plugin-github-release
       dockerfile: Dockerfile.multiarch
@@ -44,7 +44,7 @@ steps:
       event: push
 
   build-tag:
-    image: woodpeckerci/plugin-docker-buildx:2.2.0
+    image: woodpeckerci/plugin-docker-buildx:2.2.0@sha256:6e95efac78f04d45c4177c07489bc01cb6dc5ae6b39f723edd42d5d695b6f2be
     settings:
       repo: woodpeckerci/plugin-github-release
       dockerfile: Dockerfile.multiarch

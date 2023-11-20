@@ -2,7 +2,7 @@
 name: GitHub Release
 authors: Woodpecker Authors
 icon: https://woodpecker-ci.org/img/logo.svg
-description: Extend your .env file with additional variables like semver information.
+description: Add files and artifacts alongside a GitHub Release.
 tags: [github, publish, release]
 containerImage: woodpeckerci/plugin-github-release
 containerImageUrl: https://hub.docker.com/r/woodpeckerci/plugin-github-release

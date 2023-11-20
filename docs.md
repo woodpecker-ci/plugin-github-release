@@ -22,7 +22,7 @@ Woodpecker plugin to add files and artifacts alongside a GitHub Release.
 - `draft`: create a draft release
 - `prerelease`: set the release as prerelease
 - `discussion-category`: create a discussion in the given category
-- `base-url`: api url, needs to be changed for ghe (default `https://api.github.com/`)
+- `base-url`: API url, needs to be changed for GHE (default `https://api.github.com/`)
 - `upload-url`: upload url, needs to be changed for ghe (default: `https://uploads.github.com/`)
 - `title`: file or string for the title shown in the github release
 - `note`: file or string with notes for the release (example: changelog)

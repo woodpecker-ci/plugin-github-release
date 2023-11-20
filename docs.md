@@ -13,7 +13,7 @@ Woodpecker plugin to add files and artifacts alongside a GitHub Release.
 
 # Settings
 
-- `api-key`: api key to access github api
+- `api-key`: API key to access Github API
 - `files`: list of files to upload
 - `file-exists`: what to do if file already exist (default: `overwrite`)
 - `checksum`: generate specific checksums

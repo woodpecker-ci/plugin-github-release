@@ -9,7 +9,7 @@ containerImageUrl: https://hub.docker.com/r/woodpeckerci/plugin-github-release
 url: https://github.com/woodpecker-ci/plugin-github-release
 ---
 
-Woodpecker plugin to publish files and artifacts to GitHub Release.
+Woodpecker plugin to add files and artifacts alongside a GitHub Release.
 
 # Settings
 

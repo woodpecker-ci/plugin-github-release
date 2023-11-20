@@ -20,7 +20,7 @@ Woodpecker plugin to add files and artifacts alongside a GitHub Release.
 - `checksum-file`: name used for checksum file. \"CHECKSUM\" is replaced with the chosen method (default: `CHECKSUMsum.txt`)
 - `checksum-flatten`: include only the basename of the file in the checksum file
 - `draft`: create a draft release
-- `prerelease`: set the release as prerelease
+- `prerelease`: mark the release as a pre-release
 - `discussion-category`: create a discussion in the given category
 - `base-url`: API url, needs to be changed for GHE (default `https://api.github.com/`)
 - `upload-url`: upload url, needs to be changed for ghe (default: `https://uploads.github.com/`)

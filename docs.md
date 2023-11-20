@@ -32,7 +32,7 @@ Woodpecker plugin to publish files and artifacts to GitHub Release.
 
 ```yaml
 steps:
-  extend-env:
+  release:
     image: woodpeckerci/plugin-github-release
     settings:
       files:

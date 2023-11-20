@@ -23,7 +23,7 @@ Woodpecker plugin to add files and artifacts alongside a GitHub Release.
 - `prerelease`: mark the release as a pre-release
 - `discussion-category`: create a discussion in the given category
 - `base-url`: API url, needs to be changed for GHE (default `https://api.github.com/`)
-- `upload-url`: upload url, needs to be changed for ghe (default: `https://uploads.github.com/`)
+- `upload-url`: upload url, needs to be changed for GHE (default: `https://uploads.github.com/`)
 - `title`: file or string for the title shown in the github release
 - `note`: file or string with notes for the release (example: changelog)
 - `overwrite`: force overwrite existing release informations e.g. title or note

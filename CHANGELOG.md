@@ -1,13 +1,18 @@
 # Changelog
 
-## [1.1.1](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/1.1.1) - 2023-11-11
+## [1.1.1](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/1.1.1) - 2023-11-21
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@renovate[bot]
+@pat-s, @qwerty287, @renovate[bot]
+
+### 📚 Documentation
+
+- Add docs [[#32](https://github.com/woodpecker-ci/plugin-github-release/pull/32)]
 
 ### Misc
 
+- Add pre-commit and linters [[#33](https://github.com/woodpecker-ci/plugin-github-release/pull/33)]
 - chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v1 [[#30](https://github.com/woodpecker-ci/plugin-github-release/pull/30)]
 - chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v0.7.0 [[#29](https://github.com/woodpecker-ci/plugin-github-release/pull/29)]
 - chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v2.2.0 [[#25](https://github.com/woodpecker-ci/plugin-github-release/pull/25)]

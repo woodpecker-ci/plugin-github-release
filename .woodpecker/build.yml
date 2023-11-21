@@ -21,7 +21,7 @@ steps:
       - make version
 
   build-dryrun:
-    image: woodpeckerci/plugin-docker-buildx:2.2.0
+    image: woodpeckerci/plugin-docker-buildx:2.2.1
     settings:
       repo: woodpeckerci/plugin-github-release
       dockerfile: Dockerfile.multiarch
@@ -32,7 +32,7 @@ steps:
       event: pull_request
 
   build-next:
-    image: woodpeckerci/plugin-docker-buildx:2.2.0
+    image: woodpeckerci/plugin-docker-buildx:2.2.1
     settings:
       repo: woodpeckerci/plugin-github-release
       dockerfile: Dockerfile.multiarch
@@ -44,12 +44,12 @@ steps:
       event: push
 
   build-tag:
-    image: woodpeckerci/plugin-docker-buildx:2.2.0
+    image: woodpeckerci/plugin-docker-buildx:2.2.1
     settings:
       repo: woodpeckerci/plugin-github-release
       dockerfile: Dockerfile.multiarch
       platforms: linux/arm/v7,linux/arm64/v8,linux/amd64,linux/ppc64le
-      tags: [latest, "${CI_COMMIT_TAG##v}"]
+      tags: [latest, '${CI_COMMIT_TAG##v}']
     secrets: [docker_username, docker_password]
     when:
       event: tag

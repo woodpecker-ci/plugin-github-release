@@ -18,15 +18,19 @@ endif
 
 LDFLAGS := -s -w -extldflags "-static" -X main.version=${BUILD_VERSION}
 
+.PHONY: all
 all: build
 
+.PHONY: vendor
 vendor:
 	go mod tidy
 	go mod vendor
 
+.PHONY: formatcheck
 formatcheck:
 	@([ -z "$(shell gofmt -d $(GOFILES_NOVENDOR) | head)" ]) || (echo "Source is unformatted"; exit 1)
 
+.PHONY: format
 format:
 	@gofmt -w ${GOFILES_NOVENDOR}
 
@@ -40,9 +44,11 @@ vet:
 	@echo "Running go vet..."
 	@go vet $(GO_PACKAGES)
 
+.PHONY: test
 test:
 	go test -race -cover ./...
 
+.PHONY: build
 build:
 	CGO_ENABLED=0 GOOS=${TARGETOS} GOARCH=${TARGETARCH} go build -ldflags '${LDFLAGS}' -o release/plugin-github-release
 

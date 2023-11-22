@@ -1,10 +1,10 @@
 # Changelog
 
-## [1.1.1](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/1.1.1) - 2023-11-21
+## [1.1.1](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/1.1.1) - 2023-11-22
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@pat-s, @qwerty287, @renovate[bot]
+@renovate[bot], @pat-s, @qwerty287
 
 ### 📚 Documentation
 
@@ -12,6 +12,7 @@
 
 ### Misc
 
+- fix(deps): update module github.com/drone-plugins/drone-plugin-lib to v0.4.2 [[#34](https://github.com/woodpecker-ci/plugin-github-release/pull/34)]
 - Add pre-commit and linters [[#33](https://github.com/woodpecker-ci/plugin-github-release/pull/33)]
 - chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v1 [[#30](https://github.com/woodpecker-ci/plugin-github-release/pull/30)]
 - chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v0.7.0 [[#29](https://github.com/woodpecker-ci/plugin-github-release/pull/29)]

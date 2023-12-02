@@ -9,9 +9,11 @@ containerImageUrl: https://hub.docker.com/r/woodpeckerci/plugin-github-release
 url: https://github.com/woodpecker-ci/plugin-github-release
 ---
 
+# woodpecker-github-release
+
 Woodpecker plugin to add files and artifacts alongside a GitHub Release.
 
-# Settings
+## Settings
 
 - `api-key`: API key to access Github API
 - `files`: list of files to upload
@@ -28,7 +30,7 @@ Woodpecker plugin to add files and artifacts alongside a GitHub Release.
 - `note`: file or string with notes for the release (example: changelog)
 - `overwrite`: force overwrite existing release information, e.g. title or note
 
-# Example
+## Example
 
 ```yaml
 steps:

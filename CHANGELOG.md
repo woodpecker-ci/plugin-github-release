@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.1.1](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/1.1.1) - 2023-12-04
+## [1.1.1](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/1.1.1) - 2023-12-28
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### Misc
 
+- fix(deps): update module github.com/urfave/cli/v2 to v2.27.0 [[#41](https://github.com/woodpecker-ci/plugin-github-release/pull/41)]
 - fix(deps): update module github.com/urfave/cli/v2 to v2.26.0 [[#39](https://github.com/woodpecker-ci/plugin-github-release/pull/39)]
 - fix(deps): update module github.com/google/go-github/v56 to v57 [[#38](https://github.com/woodpecker-ci/plugin-github-release/pull/38)]
 - fix(deps): update module golang.org/x/oauth2 to v0.15.0 [[#37](https://github.com/woodpecker-ci/plugin-github-release/pull/37)]

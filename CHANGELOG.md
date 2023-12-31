@@ -1,5 +1,29 @@
 # Changelog
 
+## [1.1.1](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/1.1.1) - 2023-12-31
+
+### ❤️ Thanks to all contributors! ❤️
+
+@renovate[bot], @pat-s, @qwerty287
+
+### 📚 Documentation
+
+- Add docs [[#32](https://github.com/woodpecker-ci/plugin-github-release/pull/32)]
+
+### Misc
+
+- fix(deps): update module github.com/urfave/cli/v2 to v2.27.1 [[#42](https://github.com/woodpecker-ci/plugin-github-release/pull/42)]
+- fix(deps): update module github.com/urfave/cli/v2 to v2.27.0 [[#41](https://github.com/woodpecker-ci/plugin-github-release/pull/41)]
+- fix(deps): update module github.com/urfave/cli/v2 to v2.26.0 [[#39](https://github.com/woodpecker-ci/plugin-github-release/pull/39)]
+- fix(deps): update module github.com/google/go-github/v56 to v57 [[#38](https://github.com/woodpecker-ci/plugin-github-release/pull/38)]
+- fix(deps): update module golang.org/x/oauth2 to v0.15.0 [[#37](https://github.com/woodpecker-ci/plugin-github-release/pull/37)]
+- chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v1.0.3 [[#36](https://github.com/woodpecker-ci/plugin-github-release/pull/36)]
+- fix(deps): update module github.com/drone-plugins/drone-plugin-lib to v0.4.2 [[#34](https://github.com/woodpecker-ci/plugin-github-release/pull/34)]
+- Add pre-commit and linters [[#33](https://github.com/woodpecker-ci/plugin-github-release/pull/33)]
+- chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v1 [[#30](https://github.com/woodpecker-ci/plugin-github-release/pull/30)]
+- chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v0.7.0 [[#29](https://github.com/woodpecker-ci/plugin-github-release/pull/29)]
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v2.2.0 [[#25](https://github.com/woodpecker-ci/plugin-github-release/pull/25)]
+
 ## [1.1.0](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/1.1.0) - 2023-10-15
 
 ### ❤️ Thanks to all contributors! ❤️

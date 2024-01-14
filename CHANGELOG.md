@@ -8,6 +8,7 @@
 
 ### 📚 Documentation
 
+- Fix author key [[#49](https://github.com/woodpecker-ci/plugin-github-release/pull/49)]
 - Add logo [[#48](https://github.com/woodpecker-ci/plugin-github-release/pull/48)]
 
 ### Misc

@@ -1,7 +1,7 @@
 ---
 name: GitHub Release
 authors: Woodpecker Authors
-icon: https://woodpecker-ci.org/img/logo.svg
+icon: https://raw.githubusercontent.com/woodpecker-ci/plugin-github-release/main/github.svg
 description: Add files and artifacts alongside a GitHub Release.
 tags: [github, publish, release]
 containerImage: woodpeckerci/plugin-github-release

@@ -1,10 +1,14 @@
 # Changelog
 
-## [1.1.2](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/1.1.2) - 2024-01-13
+## [1.1.2](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/1.1.2) - 2024-01-14
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@renovate[bot], @pre-commit-ci[bot]
+@qwerty287, @renovate[bot], @pre-commit-ci[bot]
+
+### 📚 Documentation
+
+- Add logo [[#48](https://github.com/woodpecker-ci/plugin-github-release/pull/48)]
 
 ### Misc
 

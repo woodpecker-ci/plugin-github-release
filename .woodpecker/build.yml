@@ -21,7 +21,7 @@ steps:
       - make version
 
   build-dryrun:
-    image: woodpeckerci/plugin-docker-buildx:2.3.0
+    image: woodpeckerci/plugin-docker-buildx:3.0.0
     settings:
       repo: woodpeckerci/plugin-github-release
       dockerfile: Dockerfile.multiarch
@@ -32,7 +32,7 @@ steps:
       event: pull_request
 
   build-next:
-    image: woodpeckerci/plugin-docker-buildx:2.3.0
+    image: woodpeckerci/plugin-docker-buildx:3.0.0
     settings:
       repo: woodpeckerci/plugin-github-release
       dockerfile: Dockerfile.multiarch
@@ -45,7 +45,7 @@ steps:
       event: push
 
   build-tag:
-    image: woodpeckerci/plugin-docker-buildx:2.3.0
+    image: woodpeckerci/plugin-docker-buildx:3.0.0
     settings:
       repo: woodpeckerci/plugin-github-release
       dockerfile: Dockerfile.multiarch

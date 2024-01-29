@@ -1,10 +1,10 @@
 # Changelog
 
-## [1.1.2](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/1.1.2) - 2024-01-22
+## [1.1.2](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/1.1.2) - 2024-01-29
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@renovate[bot], @qwerty287, @pre-commit-ci[bot]
+@qwerty287
 
 ### 📚 Documentation
 
@@ -13,6 +13,7 @@
 
 ### Misc
 
+- chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v1.1.0 [[#52](https://github.com/woodpecker-ci/plugin-github-release/pull/52)]
 - chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v3 [[#50](https://github.com/woodpecker-ci/plugin-github-release/pull/50)]
 - Use cleartext user [[#51](https://github.com/woodpecker-ci/plugin-github-release/pull/51)]
 - fix(deps): update module github.com/google/go-github/v57 to v58 [[#47](https://github.com/woodpecker-ci/plugin-github-release/pull/47)]

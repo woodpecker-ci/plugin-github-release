@@ -13,6 +13,7 @@
 
 ### Misc
 
+- chore(deps): update golang docker tag to v1.22 [[#57](https://github.com/woodpecker-ci/plugin-github-release/pull/57)]
 - fix(deps): update module golang.org/x/oauth2 to v0.17.0 [[#55](https://github.com/woodpecker-ci/plugin-github-release/pull/55)]
 - [pre-commit.ci] pre-commit autoupdate [[#54](https://github.com/woodpecker-ci/plugin-github-release/pull/54)]
 - chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v3.0.1 [[#53](https://github.com/woodpecker-ci/plugin-github-release/pull/53)]

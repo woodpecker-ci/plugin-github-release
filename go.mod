@@ -1,10 +1,12 @@
 module github.com/woodpecker-ci/plugin-github-release
 
-go 1.18
+go 1.21
+
+toolchain go1.22.0
 
 require (
 	github.com/drone-plugins/drone-plugin-lib v0.4.2
-	github.com/google/go-github/v59 v59.0.0
+	github.com/google/go-github/v60 v60.0.0
 	github.com/joho/godotenv v1.5.1
 	github.com/urfave/cli/v2 v2.27.1
 	golang.org/x/oauth2 v0.17.0

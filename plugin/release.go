@@ -118,12 +118,12 @@ func (rc *releaseClient) editRelease(targetRelease github.RepositoryRelease) (*g
 
 func (rc *releaseClient) newRelease() (*github.RepositoryRelease, error) {
 	rr := &github.RepositoryRelease{
-		TagName:                github.String(rc.Tag),
-		Draft:                  &rc.Draft,
-		Prerelease:             &rc.Prerelease,
-		Name:                   &rc.Title,
-		Body:                   &rc.Note,
-		GenerateReleaseNotes:   &rc.GenerateReleaseNotes,
+		TagName:              github.String(rc.Tag),
+		Draft:                &rc.Draft,
+		Prerelease:           &rc.Prerelease,
+		Name:                 &rc.Title,
+		Body:                 &rc.Note,
+		GenerateReleaseNotes: &rc.GenerateReleaseNotes,
 	}
 
 	if *rr.Prerelease {

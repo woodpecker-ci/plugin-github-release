@@ -2,8 +2,6 @@ module github.com/woodpecker-ci/plugin-github-release
 
 go 1.21
 
-toolchain go1.22
-
 require (
 	github.com/drone-plugins/drone-plugin-lib v0.4.2
 	github.com/google/go-github/v60 v60.0.0

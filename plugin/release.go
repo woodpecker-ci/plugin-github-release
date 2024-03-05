@@ -138,7 +138,7 @@ func (rc *releaseClient) newRelease() (*github.RepositoryRelease, error) {
 		fmt.Printf("Release %s will be created and published\n", rc.Tag)
 	}
 
-	if *rr.DiscussionCategoryName != "" {
+	if rc.DiscussionCategoryName != "" {
 		fmt.Printf("Release discussion in category %s\n", *rr.DiscussionCategoryName)
 		rr.DiscussionCategoryName = &rc.DiscussionCategory
 	} else {

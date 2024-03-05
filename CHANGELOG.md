@@ -6,6 +6,10 @@
 
 @qwerty287
 
+### 🐛 Bug Fixes
+
+- Only set discussion field if requested [[#62](https://github.com/woodpecker-ci/plugin-github-release/pull/62)]
+
 ### 📚 Documentation
 
 - Fix author key [[#49](https://github.com/woodpecker-ci/plugin-github-release/pull/49)]

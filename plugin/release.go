@@ -124,7 +124,6 @@ func (rc *releaseClient) newRelease() (*github.RepositoryRelease, error) {
 		Name:                   &rc.Title,
 		Body:                   &rc.Note,
 		GenerateReleaseNotes:   &rc.GenerateReleaseNotes,
-		DiscussionCategoryName: &rc.DiscussionCategory,
 	}
 
 	if *rr.Prerelease {
@@ -141,6 +140,7 @@ func (rc *releaseClient) newRelease() (*github.RepositoryRelease, error) {
 
 	if *rr.DiscussionCategoryName != "" {
 		fmt.Printf("Release discussion in category %s\n", *rr.DiscussionCategoryName)
+		rr.DiscussionCategoryName = &rc.DiscussionCategory
 	} else {
 		fmt.Println("Not creating a discussion")
 	}

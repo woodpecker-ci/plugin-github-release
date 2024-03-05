@@ -13,6 +13,7 @@
 
 ### Misc
 
+- fix(deps): update module github.com/google/go-github/v59 to v60 [[#60](https://github.com/woodpecker-ci/plugin-github-release/pull/60)]
 - fix(deps): update module golang.org/x/oauth2 to v0.18.0 [[#61](https://github.com/woodpecker-ci/plugin-github-release/pull/61)]
 - chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v3.1.0 [[#58](https://github.com/woodpecker-ci/plugin-github-release/pull/58)]
 - fix(deps): update module github.com/google/go-github/v58 to v59 [[#56](https://github.com/woodpecker-ci/plugin-github-release/pull/56)]

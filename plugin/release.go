@@ -118,13 +118,12 @@ func (rc *releaseClient) editRelease(targetRelease github.RepositoryRelease) (*g
 
 func (rc *releaseClient) newRelease() (*github.RepositoryRelease, error) {
 	rr := &github.RepositoryRelease{
-		TagName:                github.String(rc.Tag),
-		Draft:                  &rc.Draft,
-		Prerelease:             &rc.Prerelease,
-		Name:                   &rc.Title,
-		Body:                   &rc.Note,
-		GenerateReleaseNotes:   &rc.GenerateReleaseNotes,
-		DiscussionCategoryName: &rc.DiscussionCategory,
+		TagName:              github.String(rc.Tag),
+		Draft:                &rc.Draft,
+		Prerelease:           &rc.Prerelease,
+		Name:                 &rc.Title,
+		Body:                 &rc.Note,
+		GenerateReleaseNotes: &rc.GenerateReleaseNotes,
 	}
 
 	if *rr.Prerelease {
@@ -139,8 +138,9 @@ func (rc *releaseClient) newRelease() (*github.RepositoryRelease, error) {
 		fmt.Printf("Release %s will be created and published\n", rc.Tag)
 	}
 
-	if *rr.DiscussionCategoryName != "" {
+	if rc.DiscussionCategory != "" {
 		fmt.Printf("Release discussion in category %s\n", *rr.DiscussionCategoryName)
+		rr.DiscussionCategoryName = &rc.DiscussionCategory
 	} else {
 		fmt.Println("Not creating a discussion")
 	}

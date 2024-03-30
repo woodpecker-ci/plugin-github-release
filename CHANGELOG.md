@@ -1,11 +1,15 @@
 # Changelog
 
-## [1.1.3](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/1.1.3) - 2024-03-24
+## [1.1.3](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/1.1.3) - 2024-03-30
 
 ### ❤️ Thanks to all contributors! ❤️
 
+
+
 ### Misc
 
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v3.2.1 [[#67](https://github.com/woodpecker-ci/plugin-github-release/pull/67)]
+- chore(deps): update pre-commit hook golangci/golangci-lint to v1.57.2 [[#66](https://github.com/woodpecker-ci/plugin-github-release/pull/66)]
 - chore(deps): update pre-commit hook golangci/golangci-lint to v1.57.1 [[#65](https://github.com/woodpecker-ci/plugin-github-release/pull/65)]
 - chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v3.2.0 [[#63](https://github.com/woodpecker-ci/plugin-github-release/pull/63)]
 

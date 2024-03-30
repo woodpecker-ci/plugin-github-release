@@ -4,8 +4,6 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-
-
 ### Misc
 
 - chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v3.2.1 [[#67](https://github.com/woodpecker-ci/plugin-github-release/pull/67)]

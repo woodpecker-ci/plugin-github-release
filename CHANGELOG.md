@@ -4,8 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
+
+
 ### Misc
 
+- fix(deps): update module github.com/google/go-github/v60 to v61 [[#70](https://github.com/woodpecker-ci/plugin-github-release/pull/70)]
 - fix(deps): update module golang.org/x/oauth2 to v0.19.0 [[#69](https://github.com/woodpecker-ci/plugin-github-release/pull/69)]
 - chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v3.2.1 [[#67](https://github.com/woodpecker-ci/plugin-github-release/pull/67)]
 - chore(deps): update pre-commit hook golangci/golangci-lint to v1.57.2 [[#66](https://github.com/woodpecker-ci/plugin-github-release/pull/66)]

@@ -4,8 +4,6 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-
-
 ### Misc
 
 - fix(deps): update module golang.org/x/oauth2 to v0.19.0 [[#69](https://github.com/woodpecker-ci/plugin-github-release/pull/69)]

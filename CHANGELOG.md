@@ -4,8 +4,6 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-
-
 ### Misc
 
 - fix(deps): update module github.com/google/go-github/v60 to v61 [[#70](https://github.com/woodpecker-ci/plugin-github-release/pull/70)]

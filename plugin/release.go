@@ -11,7 +11,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/google/go-github/v60/github"
+	"github.com/google/go-github/v61/github"
 )
 
 // Release holds ties the drone env data and github client together.

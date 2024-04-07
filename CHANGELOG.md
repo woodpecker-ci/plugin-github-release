@@ -4,8 +4,6 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-
-
 ### Misc
 
 - chore(deps): update pre-commit hook pre-commit/pre-commit-hooks to v4.6.0 [[#71](https://github.com/woodpecker-ci/plugin-github-release/pull/71)]

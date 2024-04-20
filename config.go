@@ -108,6 +108,5 @@ func settingsFlags(settings *plugin.Settings) []cli.Flag {
 			EnvVars:     []string{"PLUGIN_GENERATE_RELEASE_NOTES", "GITHUB_RELEASE_GENERATE_NOTES"},
 			Destination: &settings.GenerateReleaseNotes,
 		},
-
 	}
 }

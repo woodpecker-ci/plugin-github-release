@@ -16,6 +16,7 @@
 
 ### Misc
 
+- Fix deprecated pipelines [[#75](https://github.com/woodpecker-ci/plugin-github-release/pull/75)]
 - chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v1.1.1 [[#74](https://github.com/woodpecker-ci/plugin-github-release/pull/74)]
 - chore(deps): update pre-commit hook pre-commit/pre-commit-hooks to v4.6.0 [[#71](https://github.com/woodpecker-ci/plugin-github-release/pull/71)]
 - fix(deps): update module github.com/google/go-github/v60 to v61 [[#70](https://github.com/woodpecker-ci/plugin-github-release/pull/70)]

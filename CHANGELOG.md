@@ -1,11 +1,10 @@
 # Changelog
 
-## [1.1.3](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/1.1.3) - 2024-04-07
-
-### ❤️ Thanks to all contributors! ❤️
+## [1.1.3](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/v1.1.3) - 2024-04-21
 
 ### Misc
 
+- chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v1.1.1 [[#74](https://github.com/woodpecker-ci/plugin-github-release/pull/74)]
 - chore(deps): update pre-commit hook pre-commit/pre-commit-hooks to v4.6.0 [[#71](https://github.com/woodpecker-ci/plugin-github-release/pull/71)]
 - fix(deps): update module github.com/google/go-github/v60 to v61 [[#70](https://github.com/woodpecker-ci/plugin-github-release/pull/70)]
 - fix(deps): update module golang.org/x/oauth2 to v0.19.0 [[#69](https://github.com/woodpecker-ci/plugin-github-release/pull/69)]

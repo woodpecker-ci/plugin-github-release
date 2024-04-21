@@ -9,14 +9,18 @@ steps:
       - make vet
       - make formatcheck
     when:
-      event: pull_request
+      - event: pull_request
+      - event: push
+        branch: renovate/*
 
   test:
     image: *golang
     commands:
       - make test
     when:
-      event: pull_request
+      - event: pull_request
+      - event: push
+        branch: renovate/*
 
   build-dryrun:
     image: *docker_buildx
@@ -28,7 +32,9 @@ steps:
       platforms: linux/arm/v7,linux/arm64/v8,linux/amd64,linux/ppc64le
       tags: test
     when:
-      event: pull_request
+      - event: pull_request
+      - event: push
+        branch: renovate/*
 
   build-next:
     image: *docker_buildx

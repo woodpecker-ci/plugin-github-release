@@ -1,27 +1,26 @@
 variables:
   - &golang 'golang:1.22'
+  - &docker_buildx 'woodpeckerci/plugin-docker-buildx:3.2.1'
 
 steps:
   lint:
-    group: test
     image: *golang
     commands:
       - make vet
       - make formatcheck
+    when:
+      event: pull_request
 
   test:
-    group: test
     image: *golang
     commands:
       - make test
-
-  version:
-    image: *golang
-    commands:
-      - make version
+    when:
+      event: pull_request
 
   build-dryrun:
-    image: woodpeckerci/plugin-docker-buildx:3.2.1
+    image: *docker_buildx
+    depends_on: [lint, test]
     settings:
       repo: woodpeckerci/plugin-github-release
       dockerfile: Dockerfile.multiarch
@@ -32,7 +31,7 @@ steps:
       event: pull_request
 
   build-next:
-    image: woodpeckerci/plugin-docker-buildx:3.2.1
+    image: *docker_buildx
     settings:
       repo: woodpeckerci/plugin-github-release
       dockerfile: Dockerfile.multiarch
@@ -45,7 +44,7 @@ steps:
       event: push
 
   build-tag:
-    image: woodpeckerci/plugin-docker-buildx:3.2.1
+    image: *docker_buildx
     settings:
       repo: woodpeckerci/plugin-github-release
       dockerfile: Dockerfile.multiarch

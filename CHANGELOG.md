@@ -1,5 +1,31 @@
 # Changelog
 
+## [1.2.0](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/v1.2.0) - 2024-04-21
+
+### ❤️ Thanks to all contributors! ❤️
+
+@qwerty287
+
+### 📈 Enhancement
+
+- Support generating release notes [[#73](https://github.com/woodpecker-ci/plugin-github-release/pull/73)]
+
+### 🐛 Bug Fixes
+
+- Fix overwriting existing files [[#72](https://github.com/woodpecker-ci/plugin-github-release/pull/72)]
+
+### Misc
+
+- Fix deprecated pipelines [[#75](https://github.com/woodpecker-ci/plugin-github-release/pull/75)]
+- chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v1.1.1 [[#74](https://github.com/woodpecker-ci/plugin-github-release/pull/74)]
+- chore(deps): update pre-commit hook pre-commit/pre-commit-hooks to v4.6.0 [[#71](https://github.com/woodpecker-ci/plugin-github-release/pull/71)]
+- fix(deps): update module github.com/google/go-github/v60 to v61 [[#70](https://github.com/woodpecker-ci/plugin-github-release/pull/70)]
+- fix(deps): update module golang.org/x/oauth2 to v0.19.0 [[#69](https://github.com/woodpecker-ci/plugin-github-release/pull/69)]
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v3.2.1 [[#67](https://github.com/woodpecker-ci/plugin-github-release/pull/67)]
+- chore(deps): update pre-commit hook golangci/golangci-lint to v1.57.2 [[#66](https://github.com/woodpecker-ci/plugin-github-release/pull/66)]
+- chore(deps): update pre-commit hook golangci/golangci-lint to v1.57.1 [[#65](https://github.com/woodpecker-ci/plugin-github-release/pull/65)]
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v3.2.0 [[#63](https://github.com/woodpecker-ci/plugin-github-release/pull/63)]
+
 ## [1.1.2](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/1.1.2) - 2024-03-05
 
 ### ❤️ Thanks to all contributors! ❤️

@@ -1,6 +1,18 @@
 # Changelog
 
-## [1.1.3](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/v1.1.3) - 2024-04-21
+## [1.2.0](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/v1.2.0) - 2024-04-21
+
+### ❤️ Thanks to all contributors! ❤️
+
+@qwerty287
+
+### 📈 Enhancement
+
+- Support generating release notes [[#73](https://github.com/woodpecker-ci/plugin-github-release/pull/73)]
+
+### 🐛 Bug Fixes
+
+- Fix overwriting existing files [[#72](https://github.com/woodpecker-ci/plugin-github-release/pull/72)]
 
 ### Misc
 

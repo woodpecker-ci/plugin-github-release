@@ -29,6 +29,7 @@ Woodpecker plugin to add files and artifacts alongside a GitHub Release.
 - `title`: file or string for the title shown in the GitHub release
 - `note`: file or string with notes for the release (example: changelog)
 - `overwrite`: force overwrite existing release information, e.g. title or note
+- `generate-release-notes`: automatically generate GitHub release notes
 
 ## Example
 

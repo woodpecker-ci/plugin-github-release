@@ -161,9 +161,21 @@ func (rc *releaseClient) newRelease() (*github.RepositoryRelease, error) {
 }
 
 func (rc *releaseClient) uploadFiles(id int64, files []string) error {
-	assets, _, err := rc.Client.Repositories.ListReleaseAssets(rc.Context, rc.Owner, rc.Repo, id, &github.ListOptions{})
-	if err != nil {
-		return fmt.Errorf("failed to fetch existing assets: %w", err)
+	var assets []*github.ReleaseAsset
+	listOpts := &github.ListOptions{PerPage: 50}
+	for {
+		a, resp, err := rc.Client.Repositories.ListReleaseAssets(rc.Context, rc.Owner, rc.Repo, id, listOpts)
+		if err != nil {
+			return fmt.Errorf("failed to fetch existing assets: %w", err)
+		}
+		assets = append(assets, a...)
+
+		// stop iteration if there is no next page
+		if resp.NextPage == 0 {
+			break
+		}
+
+		listOpts.Page = resp.NextPage
 	}
 
 	var uploadFiles []string

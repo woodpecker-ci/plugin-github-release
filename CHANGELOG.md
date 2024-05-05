@@ -1,9 +1,10 @@
 # Changelog
 
-## [1.2.1](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/v1.2.1) - 2024-05-04
+## [1.2.1](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/v1.2.1) - 2024-05-05
 
 ### Misc
 
+- fix(deps): update module golang.org/x/oauth2 to v0.20.0 [[#79](https://github.com/woodpecker-ci/plugin-github-release/pull/79)]
 - chore(deps): update pre-commit non-major [[#78](https://github.com/woodpecker-ci/plugin-github-release/pull/78)]
 - fix(deps): update module github.com/urfave/cli/v2 to v2.27.2 [[#76](https://github.com/woodpecker-ci/plugin-github-release/pull/76)]
 

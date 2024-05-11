@@ -1,6 +1,6 @@
 variables:
   - &golang 'golang:1.22'
-  - &docker_buildx 'woodpeckerci/plugin-docker-buildx:3.2.1'
+  - &docker_buildx 'woodpeckerci/plugin-docker-buildx:4.0.0'
 
 steps:
   lint:

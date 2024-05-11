@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/google/go-github/v61/github"
+	"github.com/google/go-github/v62/github"
 	"github.com/urfave/cli/v2"
 	"golang.org/x/oauth2"
 )

@@ -1,9 +1,10 @@
 # Changelog
 
-## [1.2.1](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/v1.2.1) - 2024-05-20
+## [1.2.1](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/v1.2.1) - 2024-05-26
 
 ### Misc
 
+- chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v1.1.2 [[#85](https://github.com/woodpecker-ci/plugin-github-release/pull/85)]
 - chore(deps): update pre-commit hook golangci/golangci-lint to v1.58.2 [[#84](https://github.com/woodpecker-ci/plugin-github-release/pull/84)]
 - fix(deps): update module github.com/google/go-github/v61 to v62 [[#83](https://github.com/woodpecker-ci/plugin-github-release/pull/83)]
 - chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v4 [[#81](https://github.com/woodpecker-ci/plugin-github-release/pull/81)]

@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.2.1](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/v1.2.1) - 2024-06-04
+
+### ❤️ Thanks to all contributors! ❤️
+
+@qwerty287
+
+### Misc
+
+- Add deprecation note [[#88](https://github.com/woodpecker-ci/plugin-github-release/pull/88)]
+- chore(deps): update pre-commit non-major [[#86](https://github.com/woodpecker-ci/plugin-github-release/pull/86)]
+- chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v1.1.2 [[#85](https://github.com/woodpecker-ci/plugin-github-release/pull/85)]
+- chore(deps): update pre-commit hook golangci/golangci-lint to v1.58.2 [[#84](https://github.com/woodpecker-ci/plugin-github-release/pull/84)]
+- fix(deps): update module github.com/google/go-github/v61 to v62 [[#83](https://github.com/woodpecker-ci/plugin-github-release/pull/83)]
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v4 [[#81](https://github.com/woodpecker-ci/plugin-github-release/pull/81)]
+- chore(deps): update pre-commit hook golangci/golangci-lint to v1.58.1 [[#82](https://github.com/woodpecker-ci/plugin-github-release/pull/82)]
+- fix(deps): update module golang.org/x/oauth2 to v0.20.0 [[#79](https://github.com/woodpecker-ci/plugin-github-release/pull/79)]
+- chore(deps): update pre-commit non-major [[#78](https://github.com/woodpecker-ci/plugin-github-release/pull/78)]
+- fix(deps): update module github.com/urfave/cli/v2 to v2.27.2 [[#76](https://github.com/woodpecker-ci/plugin-github-release/pull/76)]
+
 ## [1.2.0](https://github.com/woodpecker-ci/plugin-github-release/releases/tag/v1.2.0) - 2024-04-21
 
 ### ❤️ Thanks to all contributors! ❤️

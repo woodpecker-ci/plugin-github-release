@@ -1,3 +1,5 @@
+# DEPRECATED, use https://codeberg.org/woodpecker-plugins/release
+
 # woodpecker-github-release
 
 Woodpecker plugin to publish files and artifacts to GitHub Release.

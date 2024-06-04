@@ -8,6 +8,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/drone-plugins/drone-plugin-lib/errors"
@@ -21,6 +22,8 @@ import (
 var version = "unknown"
 
 func main() {
+	fmt.Println("WARNING: THIS PLUGIN IS DEPRECATED. USE https://codeberg.org/woodpecker-plugins/release")
+
 	settings := &plugin.Settings{}
 
 	if _, err := os.Stat("/run/drone/env"); err == nil {
